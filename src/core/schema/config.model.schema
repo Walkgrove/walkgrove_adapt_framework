@@ -204,7 +204,7 @@
         "medium": {
           "type": "number",
           "required": true,
-          "default": 720,
+          "default": 820,
           "title": "Medium",
           "inputType": "Number",
           "validators": ["required", "number"],
@@ -213,7 +213,7 @@
         "large": {
           "type": "number",
           "required": true,
-          "default": 960,
+          "default": 1280,
           "title": "Large",
           "inputType": "Number",
           "validators": ["required", "number"],
@@ -222,7 +222,7 @@
         "xlarge": {
           "type": "number",
           "required": true,
-          "default": 1280,
+          "default": 1920,
           "title": "Extra Large",
           "inputType": "Number",
           "validators": ["required", "number"],

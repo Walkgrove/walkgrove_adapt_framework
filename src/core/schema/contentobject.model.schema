@@ -90,11 +90,71 @@
     "linkText": {
       "type": "string",
       "required": false,
-      "title": "Button link text",
+      "title": "Button link text - required if not using the icons (below)",
       "default": "View",
       "inputType": "Text",
       "validators" : ["required"],
       "translatable": true
+    },
+    "_icon": {
+      "type": "object",
+      "title": "An icon alternative to the button (above) - with icons for not-started, started and completed",
+      "properties": {
+        "_width": {
+          "type": "string",
+          "required": false,
+          "title": "Icon Width",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The width of the icon",
+          "translatable": false
+        },
+        "_height": {
+          "type": "string",
+          "required": false,
+          "title": "Icon Height",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The height of the icon",
+          "translatable": false
+        },
+        "alt": {
+          "type": "string",
+          "required": false,
+          "title": "Alternative text",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "A description of the icon.",
+          "translatable": true
+        },
+        "src": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "This is the 'not-started' icon."
+        },
+        "srcstarted": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "This is the 'started' icon."
+        },
+        "srccompleted": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "This is the 'completed' icon."
+        }
+      }
     },
     "duration": {
       "type": "string",
