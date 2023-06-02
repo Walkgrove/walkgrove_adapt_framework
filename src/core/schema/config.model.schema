@@ -49,6 +49,23 @@
           "title": "Submit completion on every assessment attempt",
           "help": "Specifies that the completion status will be reported every time the assessment is completed (regardless of whether the user passes or fails), assuming the course completion criteria is met"
         },
+        "_percentageBasedCompletion": {
+          "type": "boolean",
+          "default": false,
+          "inputType": "Checkbox",
+          "validators": [],
+          "title": "Submit completion by a  percentage of compoennts completed",
+          "help": "Specifies that the completion status will be reported once the specified percentage of compoennts are completed"
+        },
+        "_percentComponentsForCompletion": {
+           "type": "number",
+            "required": false,
+            "default": 80,
+            "title": "The percentage of component that need to be complete to set course completion",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "A percentage out of 100 i.e. 80"
+        },
         "_shouldSubmitScore": {
           "type": "boolean",
           "default": false,

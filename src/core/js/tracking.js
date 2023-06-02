@@ -10,6 +10,8 @@ class Tracking extends Backbone.Controller {
       _requireContentCompleted: true,
       _requireAssessmentCompleted: false,
       _submitOnEveryAssessmentAttempt: false,
+      _percentageBasedCompletion: false,
+      _percentComponentsForCompletion: 80,
       _shouldSubmitScore: false
     };
     this._assessmentState = null;
@@ -41,6 +43,39 @@ class Tracking extends Backbone.Controller {
    */
   checkCompletion() {
     const completionData = this.getCompletionData();
+
+    //
+    if (this._config._percentageBasedCompletion) {
+
+      var sessionPairsO = offlineStorage.get();
+      var courseState = sessionPairsO.c || '';
+      const stateArray = (courseState && SCORMSuspendData
+        .deserialize(courseState)
+        .slice(2)
+        .map(Number)
+        .map(String)
+        .join('')) || '';
+      
+      console.log(stateArray);
+      // check if 80% of components are complete
+      let percentComplete = 0;
+      let blocksCompStatus = stateArray.split('').map(Number).map(Boolean);
+      let blockPercent = 100/blocksCompStatus.length;
+      for(b=0; b<blocksCompStatus.length; b++) {
+        if(blocksCompStatus[b] === true) {
+          percentComplete += blockPercent;
+        }
+      }
+      if(percentComplete >= this._config._percentComponentsForCompletion) {
+        const completionData = {
+          status: COMPLETION_STATE.COMPLETE,
+          assessment: null
+        };
+        Adapt.trigger('tracking:complete', completionData);
+      }
+      return;
+    }
+    //otherwise ...
     if (completionData.status === COMPLETION_STATE.INCOMPLETE) return;
     const canRetry = completionData.assessment?.canRetry;
     if (!this._config._submitOnEveryAssessmentAttempt && completionData.status === COMPLETION_STATE.FAILED && canRetry) return;

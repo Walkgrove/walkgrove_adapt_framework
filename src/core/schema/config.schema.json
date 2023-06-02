@@ -54,6 +54,18 @@
           "description": "If enabled and the course completion criteria is met, the completion status will be reported every time the assessment is completed (regardless of whether the user passes or fails)",
           "default": false
         },
+        "_percentageBasedCompletion": {
+          "type": "boolean",
+          "title": "Submit completion by a  percentage of compoennts completed",
+          "description": "If enabled and the course completion criteria is met, the completion status will be reported once the specified percentage of compoennts are completed",
+          "default": false
+        },
+        "_percentComponentsForCompletion": {
+          "type": "number",
+          "title": "The percentage of component that need to be complete to set course completion",
+          "description": "A percentage out of 100 i.e. 80",
+          "default": 80
+        },
         "_shouldSubmitScore": {
           "type": "boolean",
           "title": "Submit score to LMS",

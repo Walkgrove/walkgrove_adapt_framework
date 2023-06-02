@@ -48,10 +48,12 @@
         "_duration": 400
     },
     "_completionCriteria": {
-        "_requireContentCompleted": false,
-        "_requireAssessmentCompleted": true,
-        "_shouldSubmitScore": true,
-        "_submitOnEveryAssessmentAttempt": true
+        "_requireContentCompleted": true,
+        "_requireAssessmentCompleted": false,
+        "_shouldSubmitScore": false,
+        "_submitOnEveryAssessmentAttempt": false,
+        "_percentageBasedCompletion": false,
+        "_percentComponentsForCompletion": 80
     },
     "_spoor": {
         "_isEnabled": true,
