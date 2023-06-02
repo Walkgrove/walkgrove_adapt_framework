@@ -212,7 +212,7 @@
         "small": {
           "type": "number",
           "required": true,
-          "default": 0,
+          "default": 420,
           "title": "Small",
           "inputType": "Number",
           "validators": ["required", "number"],

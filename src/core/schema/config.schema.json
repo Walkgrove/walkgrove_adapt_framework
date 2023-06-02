@@ -192,25 +192,25 @@
           "type": "number",
           "title": "Small",
           "description": "Pixel width for the start of the small breakpoint, e.g. cellphones",
-          "default": 0
+          "default": 420
         },
         "medium": {
           "type": "number",
           "title": "Medium",
           "description": "Pixel width for the start of the medium breakpoint, e.g. tablet devices",
-          "default": 720
+          "default": 820
         },
         "large": {
           "type": "number",
           "title": "Large",
           "description": "Pixel width for the start of the large breakpoint, e.g. laptop/desktop computers",
-          "default": 960
+          "default": 1280
         },
         "xlarge": {
           "type": "number",
           "title": "Extra Large",
           "description": "Pixel width for the start of the extra large breakpoint, e.g. hd laptop/desktop computers",
-          "default": 1280
+          "default": 1920
         }
       }
     },
