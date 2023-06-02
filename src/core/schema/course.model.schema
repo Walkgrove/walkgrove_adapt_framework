@@ -83,6 +83,14 @@
       "required": true,
       "default": 0
     },
+    "_dev": {
+      "type": "boolean",
+      "default": false,
+      "inputType": "Checkbox",
+      "validators": [],
+      "title": "Dev mode",
+      "help": "If enabled, the component IDs are displayed in black boxes, top-right of the components"
+    },
     "_start": {
       "type": "object",
       "title": "Start settings",

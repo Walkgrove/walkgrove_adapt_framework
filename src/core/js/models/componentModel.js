@@ -51,6 +51,10 @@ class ComponentModel extends AdaptModel {
   }
 
   init() {
+    if ( Adapt.course.get('_dev') ){
+      this.set('_dev', Adapt.course.get('_dev'));
+    }
+    
     if (Adapt.get('_isStarted')) {
       this.onAdaptInitialize();
       return;

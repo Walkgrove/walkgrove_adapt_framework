@@ -1,6 +1,8 @@
 {
   "_id": "course",
   "_type": "course",
+  "__frameworkVersion": "v1.0.0",
+  "_dev": false,
   "_classes": "",
   "_htmlClasses": "",
   "title": "Adapt v5",

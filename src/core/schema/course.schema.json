@@ -50,6 +50,12 @@
           "title": "Latest tracking id",
           "default": 0
         },
+        "_dev": {
+          "type": "boolean",
+          "title": "Dev mode",
+          "description": "If enabled, the component IDs are displayed in black boxes, top-right of the components",
+          "default": false
+        },
         "_start": {
           "type": "object",
           "title": "Start settings",
@@ -295,6 +301,118 @@
                       "type": "string",
                       "title": "Visited",
                       "default": "Visited",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "reset": {
+                      "type": "string",
+                      "title": "Reset",
+                      "default": "Reset",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "retry": {
+                      "type": "string",
+                      "title": "Retry",
+                      "default": "Retry",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "splash": {
+                      "type": "string",
+                      "title": "Splash",
+                      "default": "Select anywhere to begin.",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "view": {
+                      "type": "string",
+                      "title": "View",
+                      "default": "View topic",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "continue": {
+                      "type": "string",
+                      "title": "Continue",
+                      "default": "Continue",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "menu": {
+                      "type": "string",
+                      "title": "Menu",
+                      "default": "module menu",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "sound": {
+                      "type": "string",
+                      "title": "Sound",
+                      "default": "Toggle sound",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "playPause": {
+                      "type": "string",
+                      "title": "Play / Pause",
+                      "default": "Toggle playing sound",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "rewind": {
+                      "type": "string",
+                      "title": "Rewind",
+                      "default": "Rewind",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "showmore": {
+                      "type": "string",
+                      "title": "Show More",
+                      "default": "Select to show more.",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "home": {
+                      "type": "string",
+                      "title": "Home",
+                      "default": "Home",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "help": {
+                      "type": "string",
+                      "title": "Help",
+                      "default": "Help",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "resources": {
+                      "type": "string",
+                      "title": "Resources",
+                      "default": "Resources",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "progress": {
+                      "type": "string",
+                      "title": "Progress",
+                      "default": "Progress",
                       "_adapt": {
                         "translatable": true
                       }

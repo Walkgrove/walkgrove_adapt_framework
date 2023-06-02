@@ -12,6 +12,26 @@
     }
   }
 
+  .component__id {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.1rem;
+    font-size: 0.7em;
+    z-index: 1;
+
+    @media (max-width: @device-width-small) {
+      top: -2rem;
+    }
+
+    &.showID {
+      display: block;
+    }
+  }
+
   @media (min-width: @device-width-medium) {
     &.is-left {
       width: 50%;
