@@ -21,7 +21,7 @@
     "_theme": {
       "type": "string",
       "title": "Theme",
-      "default": "adapt-contrib-vanilla"
+      "default": "walkgrove_adapt_theme_vanilla"
     },
     "_menu": {
       "type": "string",
