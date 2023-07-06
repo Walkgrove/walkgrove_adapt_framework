@@ -166,7 +166,7 @@ module.exports = function(grunt) {
       ],
       scriptSafe: [
         'adapt-contrib-xapi',
-        'adapt-contrib-spoor'
+        'walkgrove-adapt-spoor'
       ]
     },
 

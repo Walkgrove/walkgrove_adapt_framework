@@ -19,7 +19,7 @@
         "adapt-contrib-pageLevelProgress": "*",
         "adapt-contrib-resources": "*",
         "adapt-contrib-slider": "*",
-        "adapt-contrib-spoor": "*",
+        "walkgrove-adapt-spoor": "*",
         "adapt-contrib-bookmarking": "*",
         "adapt-contrib-languagePicker": "*"
     }

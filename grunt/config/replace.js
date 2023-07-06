@@ -60,10 +60,10 @@ module.exports = function(grunt, options) {
       }
 
       // Shim to preserve the 'adapt_manifest' identifier.
-      var spoor = configJson._spoor;
-      if (spoor) {
-        spoor._advancedSettings = spoor._advancedSettings || {};
-        spoor._advancedSettings._manifestIdentifier = spoor._advancedSettings._manifestIdentifier || 'adapt_manifest';
+      var walkgroveSpoor = configJson._walkgrove-spoor;
+      if (walkgroveSpoor) {
+        walkgroveSpoor._advancedSettings = walkgroveSpoor._advancedSettings || {};
+        walkgroveSpoor._advancedSettings._manifestIdentifier = walkgroveSpoor._advancedSettings._manifestIdentifier || 'adapt_manifest';
       }
 
       // Combine the course, config and build JSON to pass to replace.
