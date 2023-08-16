@@ -1,6 +1,6 @@
 # Walkgrove_adapt_core
 
-# Walkgrove (adapt core framework v5.31.9, adapt-contrib-core v6.38.1)
+# Walkgrove (adapt core framework v5.31.9, adapt-contrib-core v6.39.1)
 
 ## UPDATES v1.0.0
 ### Device sizes

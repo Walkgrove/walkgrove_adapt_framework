@@ -91,6 +91,7 @@ class AdaptView extends Backbone.View {
       // Ignore bubbling events as they are outside of this view's scope
       return;
     }
+    if (!this.model.get('_isRendered')) return;
     const props = {
       // Add view own properties, bound functions etc
       ...this,
@@ -393,7 +394,7 @@ class AdaptView extends Backbone.View {
    * @returns {[AdaptView]}
    */
   getChildViews() {
-    if (!this._childViews) return this._childViews;
+    if (!this._childViews) return null;
     // Allow both a deprecated id/view map or a new array of child views
     return Object.entries(this._childViews).map(([key, value]) => value);
   }

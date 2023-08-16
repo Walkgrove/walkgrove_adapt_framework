@@ -43,7 +43,7 @@ class Tracking extends Backbone.Controller {
    */
   checkCompletion() {
     const completionData = this.getCompletionData();
-
+    
     //
     if (this._config._percentageBasedCompletion) {
 
@@ -111,9 +111,9 @@ class Tracking extends Backbone.Controller {
   loadConfig() {
     Object.assign(this._config, Adapt.config.get('_completionCriteria'));
     const newShouldSubmitScore = this._config._shouldSubmitScore;
-    const legacyShouldSubmitScore = Adapt.config.get('_walkgrove-spoor')?._tracking?._shouldSubmitScore;
+    const legacyShouldSubmitScore = Adapt.config.get('_spoor')?._tracking?._shouldSubmitScore;
     // If the legacy property exists, use it for backward compatibility but warn in the console
-    if (legacyShouldSubmitScore !== undefined) logging.deprecated('config.json:_walkgrove-spoor._tracking._shouldSubmitScore, please use only config.json:_completionCriteria._shouldSubmitScore');
+    if (legacyShouldSubmitScore !== undefined) logging.deprecated('config.json:_spoor._tracking._shouldSubmitScore, please use only config.json:_completionCriteria._shouldSubmitScore');
     this._config._shouldSubmitScore = legacyShouldSubmitScore ?? newShouldSubmitScore ?? true;
   }
 
